@@ -115,3 +115,29 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+from flask import Flask, render_template_string
+import os
+
+app = Flask(__name__)
+
+@app.route("/showcode")
+def show_code():
+    with open("app.py", "r") as f:
+        code = f.read()
+
+    # Display the Python code in a nice HTML format
+    return f"""
+    <h2>app.py Code</h2>
+    <pre style='background:#f4f4f4;padding:15px;border-radius:8px;white-space:pre-wrap;font-size:15px;'>
+{code}
+    </pre>
+    """
+
+@app.route("/")
+def home():
+    with open("index.html") as f:
+        return f.read()
+
+if __name__ == "__main__":
+    app.run(debug=True)
