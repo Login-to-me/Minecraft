@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Login or Sign Up</title>
+
+    <!-- Luxury Curvy Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            background: #f2f2f2;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #d7ecff, #f9f9f2); /* cream + soft blue */
+            font-family: 'Playfair Display', serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
+
         .box {
-            background: white;
-            width: 350px;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            background: #ffffff;
+            width: 360px;
+            padding: 45px;
+            border-radius: 18px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
             text-align: center;
+            border: 1px solid #e3eaf5;
         }
+
         h2 {
             margin-bottom: 25px;
-            font-size: 26px;
-            color: #333;
+            font-size: 30px;
+            color: #2c3e50;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
+
         .btn {
             display: block;
             width: 100%;
             padding: 14px;
-            margin: 12px 0;
-            font-size: 16px;
+            margin: 14px 0;
+            font-size: 18px;
+            font-family: 'Playfair Display', serif;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            background: #0067c0;
+            border-radius: 10px;
+            background: #5ca4ff; /* Soft luxury blue */
+            transition: 0.3s;
         }
+
         .btn:hover {
-            background: #0059a3;
+            background: #3b8df5;
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -46,7 +60,6 @@
     <div class="box">
         <h2>Welcome</h2>
 
-        <!-- UPDATED LINKS -->
         <a href="login.html" class="btn">Login</a>
         <a href="signup.html" class="btn">Sign Up</a>
     </div>
